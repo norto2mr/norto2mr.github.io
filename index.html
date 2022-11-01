@@ -28,7 +28,11 @@
       <script>
         document.addEventListener("DOMContentLoaded", () => {
   // Loading the jQuery code
-  fetch("https://www.arinsights.com/architect-power-100/")
+  fetch("https://www.arinsights.com/architect-power-100/",{
+      method: "GET",
+      headers: {
+        "Access-Control-Allow-Origin": "https:norto2mr.github.io"
+      })
     .then(function(response) {
       response.text().then(function(responseText) {
 
