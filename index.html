@@ -26,13 +26,10 @@
       }
       </style>
       <script>
+        const url = 'https://corsproxy.io/?' + encodeURIComponent('https://www.arinsights.com/architect-power-100/');
         document.addEventListener("DOMContentLoaded", () => {
   // Loading the jQuery code
-  fetch("https://www.arinsights.com/architect-power-100/",{
-      method: "GET",
-      headers: {
-        "Access-Control-Allow-Origin": "https:norto2mr.github.io"
-      })
+  fetch(url)
     .then(function(response) {
       response.text().then(function(responseText) {
 
