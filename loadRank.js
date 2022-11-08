@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .closest("section")
         .querySelector(".col1").innerText;
 
-      document.querySelector("#katie").innerText = Katie;
-      document.querySelector("#jim").innerText = Jim;
+      document.querySelector("#katieRank").innerText = Katie;
+      document.querySelector("#jimRank").innerText = Jim;
     });
   });
 });

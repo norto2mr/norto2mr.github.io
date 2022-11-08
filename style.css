@@ -1,32 +1,53 @@
 #container {
-    width: 80%;
-    margin: auto;
-    padding-top: 20px;
-  }
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+}
 
-  .ranking {
-    width: 45%;
-    margin: auto;
-    display: inline-block;
+h1 {
     text-align: center;
+    width: 80%;
+    margin: 20px auto 10px auto;
     padding: 20px 10px;
+    background-color: gray;
+    border: 1px black;
     border-radius: 10px;
-  }
+    color: white;
+}
 
-  .rankval {
-    display: block;
-    width: 100%;
-    font-size: 7em;
-  }
+.ranking {
+  width: 45%;
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
 
-  .rankTitle {
-    display: block;
-    font-size: 3em;
-  }
+#katie {
+    color: white;
+    background-color: #520dc2;
+}
+
+#jim {
+    color: white;
+    background-color: #0a58ca;
+}
+
+.rankval {
+  display: block;
+  width: 100%;
+  font-size: 7em;
+}
+
+.rankTitle {
+  display: block;
+  font-size: 3em;
+}
 
 .ranking img {
-    display: block;
-    margin: auto;
-    max-height:200px;
-    padding: 10px;
+  display: block;
+  margin: auto;
+  max-height: 200px;
+  padding: 10px;
 }
