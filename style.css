@@ -1,0 +1,32 @@
+#container {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .ranking {
+    width: 45%;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+  }
+
+  .rankval {
+    display: block;
+    width: 100%;
+    font-size: 7em;
+  }
+
+  .rankTitle {
+    display: block;
+    font-size: 3em;
+  }
+
+.ranking img {
+    display: block;
+    margin: auto;
+    max-height:200px;
+    padding: 10px;
+}
