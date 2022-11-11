@@ -1,4 +1,4 @@
-#container {
+.container {
   width: 80%;
   margin: auto;
   padding-top: 20px;
@@ -50,4 +50,23 @@ h1 {
   margin: auto;
   max-height: 200px;
   padding: 10px;
+}
+
+#main {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main li {
+    padding: 0;
+    margin: 0;
+}
+
+.stattitle {
+    text-align: center;
+    font-weight: Bold;
+    display: block;
+    background-color: black;
+    color: white;
 }
