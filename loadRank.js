@@ -8,10 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Parse the text
       var doc = parser.parseFromString(responseText, "text/html");
-
+      console.log(doc);
+      console.log(doc.querySelectorAll(".col3"));
       const Katie = Array.from(doc.querySelectorAll(".col3"))
         .find((el) => el.textContent === "Katie Norton")
+        .closest("section")
+        .querySelector(".col1")
         .innerText;
+      
       const Jim = Array.from(doc.querySelectorAll(".col3"))
         .find((el) => el.textContent === "Jim Mercer")
         .innerText;
