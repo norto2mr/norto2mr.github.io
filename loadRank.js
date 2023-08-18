@@ -11,12 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const Katie = Array.from(doc.querySelectorAll(".col3"))
         .find((el) => el.textContent === "Katie Norton")
-        .closest("section")
-        .querySelector(".col1").innerText;
+        .innerText;
       const Jim = Array.from(doc.querySelectorAll(".col3"))
         .find((el) => el.textContent === "Jim Mercer")
-        .closest("section")
-        .querySelector(".col1").innerText;
+        .innerText;
 
       document.querySelector("#analystRankKatie").innerText = Katie;
       document.querySelector("#analystRankJim").innerText = Jim;
