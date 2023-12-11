@@ -1,5 +1,5 @@
 const url =
-  "https://corsproxy.io/?" +
+  "https://crossorigin.me/" +
   encodeURIComponent("https://www.arinsights.com/architect-power-100/");
 document.addEventListener("DOMContentLoaded", () => {
   fetch(url).then(function (response) {
