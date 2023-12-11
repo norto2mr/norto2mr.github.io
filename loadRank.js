@@ -3,22 +3,22 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch(url).then(function (response) {
     response.text().then(function (responseText) {
       var parser = new DOMParser();
-
-      // Parse the text
       var doc = parser.parseFromString(responseText, "text/html");
-      console.log(doc);
-      console.log(doc.querySelectorAll(".col3"));
+      
       const Katie = Array.from(doc.querySelectorAll(".col3"))
         .find((el) => el.textContent === "Katie Norton")
         .closest("section")
         .querySelector(".col1")
         .innerText;
       
+      document.querySelector("#analystRankKatie").innerText = Katie;
+
       const Jim = Array.from(doc.querySelectorAll(".col3"))
         .find((el) => el.textContent === "Jim Mercer")
+        .closest("section")
+        .querySelector(".col1")
         .innerText;
 
-      document.querySelector("#analystRankKatie").innerText = Katie;
       document.querySelector("#analystRankJim").innerText = Jim;
     });
   });
