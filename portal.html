@@ -108,33 +108,16 @@
         </div>
         <div class="link-grid">
             <a href="https://www.roblox.com/users/4692733574/profile" class="link-button">
-                <img id="alex-pfp" src="https://www.google.com/s2/favicons?domain=roblox.com" alt="Alex"> Alex
+                <img id="alex-pfp" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-961BEE163903357400B97893014C0BCD-Png/75/75/AvatarHeadshot/Png/isCircular" alt="Alex"> Alex
             </a>
             <a href="https://www.roblox.com/users/4692768121/profile" class="link-button">
-                <img id="max-pfp" src="https://www.google.com/s2/favicons?domain=roblox.com" alt="Max"> Max
+                <img id="max-pfp" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-D466A46489097F7A41F35E6E7CAB7E5C-Png/75/75/AvatarHeadshot/Png/isCircular" alt="Max"> Max
             </a>
             <a href="https://www.roblox.com/users/3278129550/profile" class="link-button">
-                <img id="dad-pfp" src="https://www.google.com/s2/favicons?domain=roblox.com" alt="Dad"> Dad
+                <img id="dad-pfp" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-099499D92723870DCA0F95563239B1CE-Png/75/75/AvatarHeadshot/Png/isCircular" alt="Dad"> Dad
             </a>
         </div>
     </div>
 </body>
-<script>
-    const headshots = {
-        "alex-pfp": "4692733574",
-        "max-pfp": "4692768121",
-        "dad-pfp": "3278129550"
-    };
 
-    for (const [imgId, userId] of Object.entries(headshots)) {
-        fetch(`https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=${userId}&size=150x150&format=Png&isCircular=true`)
-            .then(res => res.json())
-            .then(data => {
-                const url = data.data[0]?.imageUrl;
-                if (url) {
-                    document.getElementById(imgId).src = url;
-                }
-            });
-    }
-</script>
 </html>
