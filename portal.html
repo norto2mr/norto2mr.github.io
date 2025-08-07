@@ -106,7 +106,35 @@
                 <img src="https://www.google.com/s2/favicons?domain=wheelofnames.com"> Wheel of Names
             </a>
         </div>
+        <div class="link-grid">
+            <a href="https://www.roblox.com/users/4692733574/profile" class="link-button">
+                <img id="alex-pfp" src="https://www.google.com/s2/favicons?domain=roblox.com" alt="Alex"> Alex
+            </a>
+            <a href="https://www.roblox.com/users/4692768121/profile" class="link-button">
+                <img id="max-pfp" src="https://www.google.com/s2/favicons?domain=roblox.com" alt="Max"> Max
+            </a>
+            <a href="https://www.roblox.com/users/3278129550/profile" class="link-button">
+                <img id="dad-pfp" src="https://www.google.com/s2/favicons?domain=roblox.com" alt="Dad"> Dad
+            </a>
+        </div>
     </div>
 </body>
+<script>
+    const headshots = {
+        "alex-pfp": "4692733574",
+        "max-pfp": "4692768121",
+        "dad-pfp": "3278129550"
+    };
 
+    for (const [imgId, userId] of Object.entries(headshots)) {
+        fetch(`https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=${userId}&size=150x150&format=Png&isCircular=true`)
+            .then(res => res.json())
+            .then(data => {
+                const url = data.data[0]?.imageUrl;
+                if (url) {
+                    document.getElementById(imgId).src = url;
+                }
+            });
+    }
+</script>
 </html>
